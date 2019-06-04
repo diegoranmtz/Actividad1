@@ -20,6 +20,8 @@ namespace Actividad1
         public void realizarAdopcion(Perro perro, Usuario usuario)
         {
             Console.WriteLine("Estimado: " + usuario.nombre + "\nHaz adoptado a " + perro.nombre);
+            Console.WriteLine("Con la cantidad de : " + usuario.dinero.cantidad + "Pesos en " + perro.sucursal.direccion);
+            
             Console.WriteLine("Saludos.");
             Console.ReadLine();
         }
