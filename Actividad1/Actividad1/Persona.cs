@@ -5,6 +5,5 @@ namespace Actividad1
     {
         public string nombre { get; set; }
         public int edad { get; set; }
-        public char sexo { get; set; }
     }
 }
