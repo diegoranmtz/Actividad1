@@ -5,10 +5,18 @@ namespace Actividad1
     class Tramite
     {
 
-        public Tramite() { }
-        public Tramite(Perro perro, Usuario usuario) { realizarAdopcion(perro, usuario); }
-
         public int folio { get; set; }
+        private Perro perro { get; set; }
+        private Usuario usuario { get; set; }
+     
+        public Tramite() { }
+        public Tramite(Perro perro, Usuario usuario) {
+            this.perro = perro;
+            this.usuario = usuario;
+            
+            realizarAdopcion(perro, usuario); 
+        }
+        
         public void realizarAdopcion(Perro perro, Usuario usuario)
         {
             Console.WriteLine("Estimado: " + usuario.nombre + "\nHaz adoptado a " + perro.nombre);
