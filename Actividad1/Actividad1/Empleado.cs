@@ -2,6 +2,6 @@
 {
     public class Empleado : Persona
     {
-        public string Noempleado { get; set; }
+        public int sueldo { get; set; }
     }
 }
