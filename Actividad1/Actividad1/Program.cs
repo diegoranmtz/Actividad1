@@ -17,6 +17,15 @@ namespace Actividad1
             usuario.nombre = Console.ReadLine();
             Console.WriteLine("¿Y el del perrito?");
             perro.nombre = Console.ReadLine();
+            Console.WriteLine("¿cuanto dinero es?");
+            usuario.dinero.cantidad = Console.ReadLine();
+            
+            Console.WriteLine("¿que tipo de dinero es?");
+            usuario.dinero.tipo = Console.ReadLine();
+            
+            
+            Console.WriteLine("¿donde está la sucursal?");
+            perro.sucursal.direccion = Console.ReadLine();
             Tramite tramite = new Tramite(perro, usuario);
         }
     }
